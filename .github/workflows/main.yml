@@ -4,20 +4,15 @@ on:
       - master
 
 
-
-
-
-
 jobs:
   build:
     runs-on: ubuntu-latest 
 
+    steps:
+      - name: 'test yml'
+        run: pwd 
 
-  steps:
-    - name: 'test dir'
-      run: pwd
+      - name: 'test print'  
+        run : echo moelserougy 
 
-  
-   - name: 'test print'
-     run: echo moelserougy
- 
+    
