@@ -15,4 +15,10 @@ jobs:
       - name: 'test print'  
         run : echo moelserougy 
 
-    
+      - uses: actions/checkout@v3
+      - name: 'print file'  
+        run : ls 
+
+
+      - name: 'login to dockerhub'
+        run : docker login --username ${{ secrets.USER_NAME }} --password ${{ secrets.ACCESS_TOKEN }}
